@@ -5,7 +5,7 @@ function App() {
   const [items, setItems] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:3001/getUsers")
+      .get("https://admin-backend-delivery.onrender.com/getUsers")
       .then((items) => setItems(items.data))
       .catch((err) => console.log(err.message));
   }, []);
